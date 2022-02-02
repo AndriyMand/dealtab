@@ -2,7 +2,8 @@
 // ini_set ( 'display_errors', 1 );
 // ini_set ( 'display_startup_errors', 1 );
 
-require_once ('/home/www/script-test/auto_podium/src/crest.php');
+
+require_once ('/home/admin/web/bx24.autopodium.ua/public_html/public/auto_podium/dealTab/crest.php');
 
 function json_encode_advanced(array $arr, $sequential_keys = true, $quotes = true, $beautiful_json = true) {
     

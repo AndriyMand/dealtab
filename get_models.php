@@ -1,5 +1,5 @@
 <?php 
-require_once ('/home/www/script-test/auto_podium/src/crest.php');
+require_once ('/home/admin/web/bx24.autopodium.ua/public_html/public/auto_podium/dealTab/crest.php');
 
 $request = $_REQUEST;
 

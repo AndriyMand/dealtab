@@ -1,5 +1,8 @@
 <?php 
-require_once ('/home/www/script-test/auto_podium/src/crest.php');
+// ini_set ( 'display_errors', 1 );
+// ini_set ( 'display_startup_errors', 1 );
+
+require_once ('/home/admin/web/bx24.autopodium.ua/public_html/public/auto_podium/dealTab/crest.php');
 
 $request = $_REQUEST;
 $whatChangedBlockId    = 29;
@@ -306,6 +309,8 @@ if ( !empty( $request['currentDealId'] ) ) {
     
     $tableData = array();
     
+    
+    
     if ( !empty($getData) ) {
         foreach ( $getData as $record ) {
             $elementData = array();
@@ -364,9 +369,8 @@ if ( !empty( $request['currentDealId'] ) ) {
         'PROPERTY_197',
     );
     
-    
     ?>
-    <?php foreach ($tableData as $recordId => $recordData) {?>
+    <?php foreach ($tableData as $recordId => $recordData) { ?>
 					<?php 
 					
 						$colored = '';
@@ -413,7 +417,7 @@ if ( !empty( $request['currentDealId'] ) ) {
 						<?php } ?>
 					</tr>
 	<?php } ?>
-    <?
+    <?php
 } elseif ( !empty( $request['commentAdd'])) {
     
 }
